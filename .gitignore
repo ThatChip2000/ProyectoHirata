@@ -1,0 +1,11 @@
+# Build outputs
+*.class
+
+# Local/editor
+.vscode/
+
+# Dependencies and local binaries
+lib/
+
+# Tests excluded by request
+RegistroKilometrajeTest.java

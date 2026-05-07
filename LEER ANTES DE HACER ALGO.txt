@@ -1,0 +1,35 @@
+El archivo "hirata_flotas.sql" es la base de datos, es para montarla de manera local.
+
+Toda la carpeta "EntregaFlota" la abren arrastrándola a vscode
+
+--------------o--------------
+
+Proyecto: Sistema de Flota
+
+Requisitos:
+- Java JDK instalado
+- MySQL o XAMPP instalado y activo
+
+Importar base de datos:
+1) Abrir PowerShell en la carpeta donde está este ZIP descomprimido.
+2) Si usas XAMPP, ejecutar: (yo, Miguel, use XAMPP)
+   & "C:\xampp\mysql\bin\mysql.exe" -u root < .\hirata_flotas.sql
+3) Si no usas XAMPP, ejecutar con tu cliente mysql:
+   mysql -u root -p < .\hirata_flotas.sql
+
+Compilar:
+   javac -cp ".;lib/mysql-connector-j-9.6.0.jar" RegistroKilometraje.java
+
+Ejecutar:
+   java -cp ".;lib/mysql-connector-j-9.6.0.jar" RegistroKilometraje
+
+Pruebas unitarias: 
+Compilar: javac -cp ".;lib/junit-platform-console-standalone-1.10.3.jar" RegistroKilometrajeTest.java
+
+Ejecutar: 
+java -jar lib/junit-platform-console-standalone-1.10.3.jar --class-path . --select-class RegistroKilometrajeTest
+
+Notas:
+- Si tu MySQL no usa root o tiene contraseña distinta, cambia DB_USER y DB_PASS en RegistroKilometraje.java.
+- En este proyecto local por defecto: DB_USER="root" y DB_PASS="" (sin contraseña).
+- El archivo hirata_flotas.sql crea la base y las tablas necesarias.

@@ -1,0 +1,142 @@
+================================================================================
+EQUIPOS DISPONIBLES EN LA BASE DE DATOS - HIRATA FLOTAS
+================================================================================
+
+COMPUTADORAS (3 equipos)
+════════════════════════════════════════════════════════════════════════════════
+
+1. PC-001
+   Modelo: Dell OptiPlex 7090
+   Ubicación: Oficina Administrativa
+   Estado: Activo
+   Responsable: Administrador General (Admin)
+   Protocolo: 12 items de checklist en 3 secciones
+
+2. PC-002
+   Modelo: HP ProDesk 600
+   Ubicación: Oficina Ventas
+   Estado: Activo
+   Responsable: Laura Beatriz Herrera (admin01)
+   Protocolo: 12 items de checklist en 3 secciones
+
+3. PC-003
+   Modelo: Lenovo ThinkCentre
+   Ubicación: Oficina Contabilidad
+   Estado: Activo
+   Responsable: Sin asignar
+   Protocolo: 12 items de checklist en 3 secciones
+
+════════════════════════════════════════════════════════════════════════════════
+
+IMPRESORAS (2 equipos)
+════════════════════════════════════════════════════════════════════════════════
+
+1. IMP-001
+   Modelo: Epson EcoTank M3180
+   Ubicación: Recepción
+   Estado: Activo
+   Responsable: Sin asignar
+   Protocolo: 12 items de checklist en 5 secciones
+   
+   Protocolo incluye:
+   - Sección 1: Revisión de niveles y rellenado (2 items críticos)
+   - Sección 2: Test de inyectores y limpieza (3 items)
+   - Sección 3: Higiene del escáner y ADF (3 items)
+   - Sección 4: Limpieza de rodillos (2 items críticos)
+   - Sección 5: Verificación de consumibles (2 items)
+
+2. IMP-002
+   Modelo: HP LaserJet Pro M404n
+   Ubicación: Oficina Administrativa
+   Estado: Activo
+   Responsable: Administrador General (Admin)
+   Protocolo: 12 items de checklist en 5 secciones (mismo que IMP-001)
+
+════════════════════════════════════════════════════════════════════════════════
+
+PROYECTORES (2 equipos)
+════════════════════════════════════════════════════════════════════════════════
+
+1. PROY-001
+   Modelo: Epson PowerLite L690U
+   Ubicación: Sala de Juntas A
+   Estado: Activo
+   Responsable: Sin asignar
+   Protocolo: 15 items de checklist en 4 secciones
+   
+   Protocolo incluye:
+   - Sección 1: Desconexión y enfriamiento (3 items críticos)
+   - Sección 2: Mantenimiento del filtro (6 items con 2 críticos)
+   - Sección 3: Limpieza del lente (4 items)
+   - Sección 4: Diagnóstico de estado (2 items)
+
+2. PROY-002
+   Modelo: Epson PowerLite L690U
+   Ubicación: Sala de Juntas B
+   Estado: Activo
+   Responsable: Sin asignar
+   Protocolo: 15 items de checklist en 4 secciones (mismo que PROY-001)
+
+════════════════════════════════════════════════════════════════════════════════
+
+CÓMO USAR ESTOS CÓDIGOS EN LA APLICACIÓN
+════════════════════════════════════════════════════════════════════════════════
+
+1. Abre la aplicación y accede al módulo "Mantenimiento Equipos" (solo admin)
+
+2. En el campo "Código del equipo", ingresa uno de los códigos anteriores:
+   - Ejemplos: PC-001, IMP-001, PROY-001
+
+3. Haz clic en "Buscar Equipo"
+
+4. Se cargarán automáticamente:
+   - Información del equipo
+   - Checklist correspondiente
+
+5. Selecciona:
+   - Tipo: Preventivo o Correctivo
+   - Completa el checklist
+
+6. Haz clic en "Guardar Mantenimiento"
+
+================================================================================
+
+RESUMEN DE PROTOCOLOS
+════════════════════════════════════════════════════════════════════════════════
+
+COMPUTADORA (12 items totales)
+├─ 3 Secciones
+├─ 4 Items críticos (⚠️)
+└─ Temas: Preparación, Limpieza interna, Revisión de contactos
+
+IMPRESORA (12 items totales)
+├─ 5 Secciones
+├─ 4 Items críticos (⚠️)
+└─ Temas: Niveles, Inyectores, Escáner, Rodillos, Consumibles
+
+PROYECTOR (15 items totales)
+├─ 4 Secciones
+├─ 5 Items críticos (⚠️)
+└─ Temas: Enfriamiento, Filtro, Lente, Diagnóstico
+
+════════════════════════════════════════════════════════════════════════════════
+
+NOTAS IMPORTANTES
+════════════════════════════════════════════════════════════════════════════════
+
+- Los equipos están en estado "Activo" en la base de datos
+- Todos los códigos son SENSIBLES A MAYÚSCULAS/MINÚSCULAS
+- Cada mantención se guarda en BD con:
+  * Fecha y hora actual
+  * Usuario que realiza la mantención
+  * Tipo (Preventivo/Correctivo)
+  * Estado de cada item (completado/no completado)
+  * Observaciones personalizadas
+
+- Para cambiar responsables, actualiza manualmente en phpMyAdmin
+- Para agregar nuevos equipos, usa phpMyAdmin o SQL directo
+
+════════════════════════════════════════════════════════════════════════════════
+
+ÚLTIMA ACTUALIZACIÓN: 2026-05-06
+VERSIÓN BD: hirata_flotas_actualizado.sql
