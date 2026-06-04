@@ -1,0 +1,23 @@
+Credenciales de acceso para la aplicación Hirata
+
+Usuarios y contraseñas:
+- admin / admin123 (administrador)
+- juan.camion / 1234 (camionero)
+- maria.camion / 1234 (camionero)
+- camionero01 / Camion#2026 (camionero)
+- camionero02 / RutaSegura#26 (camionero)
+- camionero03 / Volante#2026 (camionero)
+- camionero04 / MotorFuerte#1 (camionero)
+- camionero05 / DieselPlus#99 (camionero)
+- camionero06 / Kilometro#500 (camionero)
+- camionero07 / CargaSegura#7 (camionero)
+- camionero08 / ViajeLargo#88 (camionero)
+- camionero09 / CabinaNorte#3 (camionero)
+- camionero10 / FrenoOK#2026 (camionero)
+- admin01 / AdminSeguro#26 (administrador)
+- admin02 / ControlFlota#1 (administrador)
+
+Usuario de base de datos MySQL usado por la app:
+- root / (sin contraseña por defecto)
+
+Nota: el login de la aplicación usa los datos de la tabla `usuarios`.
