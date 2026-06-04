@@ -1,0 +1,24 @@
+USUARIOS Y CONTRASENAS
+
+Lista completa de usuarios creados hasta ahora.
+
+ADMINISTRADORES
+- admin | admin123
+- admin01 | AdminSeguro#26
+- admin02 | ControlFlota#1
+
+CAMIONEROS
+- juan.camion | 1234
+- maria.camion | 1234
+- camionero01 | Camion#2026
+- camionero02 | RutaSegura#26
+- camionero03 | Volante#2026
+- camionero04 | MotorFuerte#1
+- camionero05 | DieselPlus#99
+- camionero06 | Kilometro#500
+- camionero07 | CargaSegura#7
+- camionero08 | ViajeLargo#88
+- camionero09 | CabinaNorte#3
+- camionero10 | FrenoOK#2026
+
+Nota: Estas credenciales son para uso local y de prueba.
